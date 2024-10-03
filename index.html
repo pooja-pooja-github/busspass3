@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<centre>
+    <h1>GENARAL BUSSPASS APPILICATION</h1>
+</centre>
+<form action="./submit.html" method="get">
+    <fieldset>
+        <legend>
+            <h4>APPLICANT DETAILS</h4>
+        </legend>
+        <pre>
+        <!--Name ans Father's name-->
+        <label for="username"><strong>Name</strong></label>
+        <input type="text" id="username" name="username" maxlength="15"pattern="[a-zA-Z/s]{8,15}" tittle="Please follow the format of minimum length of 8 characters and max length of 15 characters and no numbers" required>
+        <label  for="fathername"><strong>Father's/Gaurdian's name</strong></label>
+        <input type="text" id="fathername" name="fathername" maxlength="15" pattern="[a-zA-Z]{8,15}" tittle="please follow the format of minimum length of 8 characters and max length of 15 characters and no number" required>
+        </pre>
+        <pre>
+        <!--DOB and Gender-->
+        <label for="DOB"><strong>Date of birth</strong></label>
+        <input type="Date" name="Date of birth" id="DOB" required>
+        <label for="gender"><strong>Gender</strong></label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male"><strong>Male</strong></label>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="gender"><strong>Female</strong></label>
+        </pre>
+        <pre>
+        <!--age and aadhar-->
+        <label for="age"><strong>ages As On </strong></label>
+        <input type="text" id="age" pattern="[/d]{2}" title="Fill your age accordingly" required>
+        <label for="aadhar"><strong>Aadhar Number </strong></label>
+        <input type="text" maxlength="12" name =" aadhar number" id="aadhar" pattern="[/d]{12}" tittle="Enter aadhar number correctly" required>
+        </pre>
+        <pre>
+        <!--mobile number and Email id-->
+        <label for="mobile number"><strong> mobile number</label>
+        <input type="text" name= "mobile number" id="mobile number" maxlength="10" pattern="[/d] {10}" tittle="Enter 10 digits mobile number"required>
+        <label for="aadhar"><strong>aadhar number</strong></label>
+        <input type="text" maxilength="12" name="aadhar Number" id="aadhar" pattern="[a-z0-9.]+@(gmail|yahoo|outlook|gov|org|reddif)\.[a-z]{2,}" title="please fill the email correctly" required>
+        </pre>
+        <pre>
+        <!--photo-->
+        <label for="photo"> Photo</label>
+        <input type="file" accept="img/jpeg" name="photo" id="photo" required>
+        </pre>
+ </fieldset>
+
+ <fieldset>
+    <legend>
+        <h4> Adderess Details</h4>
+    </legend>
+    
+<!--Address and district-->
+<pre>
+    <label for="adderess"><strong> Adderess</strong></label>
+    <textarea name="address" id="address" rows="3" cols="35" required></textarea>
+    <label for="district"><strong>District</strong></label>
+    <select name="District" id="district"><option value="select option" select disabled>---select option---</option>
+    <option value="srikakulam">Srikakulam<option value="vizayanagaram">Vizayanagaram</option></select>
+    </pre>
+        <!--Mandal and Village-->
+    <pre>
+    
+    <label for="mandal"><strong>Mandal</strong></label> 
+    <select name="mandal" id="mandal"><option value="select option "select disabled>---select option---</option>
+    <option value="Mandasa">baligam</option> <option value="sompeta">Sompeta</option> <option value="palasa">Palasa</option></select>
+    <label for="village"><strong>Village</strong> </label>
+    <select name="village" id="village">
+    <option value="select option" selected disabled>---select option---</option>
+    <option value="mamadipalli"><option value="RK puram">RK puram</option></select>
+    </pre>
+    <pre>
+    <label for="pincode"><strong>Pincode</strong></label>
+    <input type="text" pattern="[/d]{6}" tittle="Enter correct pincode">
+    </pre>
+</fieldset>
+
+<fieldset>
+    <legend>
+        <h4>Pass type details</h4>
+        </legend>
+    <label for="city"><strong> city</strong></label>
+    <select name="city" id="city"><option value="select option" select disabled>---select option---</option><option value="baligam">baligam</option>  
+    <option value="palasa">palasa</option>
+    <option value="sompeta">sompeta</option><select><br>
+    <pre>
+        
+ <fieldset>
+    <legend>
+        <h4>pass type details</h4>
+    </legend> 
+    <!--city-->
+    <pre>
+        <label for="city"><strong>city</strong></label>
+        <select name="city" id="city"> <option value="select option" select disabled>---select option---</option>
+        <option value="palasa">Palasa</option>
+    <option value="sompeta">sompeta</option></select>
+    </pre>
+    <!--passtype-->
+    <pre>
+    <label for="pass type"><strong>passtype</strong></label>
+    <select name="passtype" id="passtype"><option value="select option" select disabled>---select option---</option>
+    <option value="daypass">Daypass</option> <option value="monthly">Monthly</option> <select></select>
+    <option value="yearly">yearly</option> </select>
+    </pre>
+</fieldset>
+<fieldset>
+    <legend>
+    <h4>Mode of payment and pass collection</h4>
+    </legend>
+    <!--paymentmode-->
+    <pre>
+    <label for="payment"><strong>payment mode</strong></label>
+    <select name="payment" id="payment"><option value="select option" selected disabled>---select option---</option> <option value="cash">cash</option> <option value="card">Debit/credit card</option> <option value="UPI">UPI</option></select>
+ </pre>
+ <!--delivery mode-->
+ <pre>
+    <label for="delivery"><strong>Pass delivery mode</strong></label>
+    <select name="delivery type" id="delivery"> <option value="select option" select disabled>---select option---</option>  <option value="Express">Express</option>
+    <option value="NOrmal"></option></select>
+    </pre>
+    <pre>
+        <!---collection Mode--->
+        <label for="collection"><strong>Pass collection</strong></label>
+        <select name="city" id="city"><option value="select option" selected disabled>---select option---</option> <option value="palasa">palasa</option><option value="sompeta">Sompeta</option></select>
+    </pre>
+    </fieldset>
+    <centre><input type="submit" value="submit Appilication"></centre>
+</body>
+</html>
